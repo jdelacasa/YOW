@@ -5,32 +5,33 @@
         Antonio Solis Izquierdo (@asolisi)
 """
 
-#Creamos el archivo en el que escribiremos el diccionario
-nombre_archivo=input("Introduzca el nombre para su archivo de salida -->  ")
-doc=open(nombre_archivo+".txt","w")
+#Creating a file for output
+file_name=input("Introduce a name for your output file -->  ")
+doc=open(file_name+".txt","w")
 
-#Creamos las listas de palabras que usaremos
-lista_palabras=[]
-lista_palabras_nueva=[]
+#Creating two list for the wordlist
+word_list=[]
+word_list_new=[]
 
-#Introducir palabras en la lista para crear el diccionario
-palabra=input("Vamos a introducir algunas palabras clave : \n")
-while palabra != "salir":
-    lista_palabras.append(palabra)
-    palabra=input("Introduzca otra palabra: (escribir 'salir' para terminar)\n")
+#Introduce words in the wordlist
+word=input("Introduce a key word : \n")
+while word != "quit":
+    word_list.append(word)
+    word=input("Introduce more key words (type 'quit' to finish)\n")
 
-#Imprimos las palabras introducidas
-#print(lista_palabras)
+#Printing the input words
+#print(word_list)
 
-for i in lista_palabras:
-    for j in lista_palabras:
+for i in word_list:
+    for j in word_list:
         if(i!=j):
-            lista_palabras_nueva.append(i+j)
+            word_list_new.append(i+j)
 
-#print(lista_palabras_nueva)
+#Printing the new wordlist
+#print(word_list_new)
 
-#Escribimos la lista de palabras nueva en un archivo de texto
-for i in lista_palabras_nueva:
+#Writting the new wordlist in the output file
+for i in word_list_new:
     doc.write(i + "\n")
 
 doc.close()
