@@ -9,7 +9,8 @@
 # WELCOMO TO YOW TOOL
 #---------------------------------------------------
 print("\n##################################")
-print("WELCOME TO YOW - Your Own Wordlist")
+print("WELCOME TO YOW - Your Own Wordlist \n")
+print(" Authors: \n     @juanvelascogomez \n     @asolisi")
 print("################################## \n")
 
 #---------------------------------------------------
