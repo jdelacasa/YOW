@@ -1,13 +1,41 @@
-# YOW
+# YOW - Your Own Wordlist
 A simply way of making your own wordlists
 
-##How it works
+## Why using YOW?
+
+**YOW** provides you a simply way to make your own wordlists so that you can use them in brute force attacks with tools like:
+
+  - Medusa
+  - John the ripper
+
+Cracking passwords, brute force attacks in logins by using a custom wordlist for your victim.
 
 
-##Coming soon...
+## How it works
 
+Using **YOW** is very simple, start by cloning this repo to your computer typing on your terminal:
 
-##Authors
+    git clone https://github.com/juanvelascogomez/YOW.git
+
+Then you just have to launch the **python** script by typing
+
+    python yow.py
+
+Program will guide you across the configuration, is very easy.
+
+## Coming soon...
+
+**YOW v1.0**
+
+We will be providing some new features for YOW tool.
+
+Leave your ideas so that we can improve it. They are all welcome!
+
+## Authors
 
 - Juan Antonio Velasco Gómez ([@juanvelascogomez](https://github.com/juanvelascogomez))
 - Antonio Solís Izquierdo ([@asolisi](https://github.com/asolisi))
+
+### Keep in mind
+
+Authors of **YOW** made this tool for ethical hacking. We are not responsible of the bad use of it. Be good }:)
