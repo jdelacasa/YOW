@@ -40,6 +40,8 @@ Leave your ideas so that we can improve it. They are all welcome!
 
 - Capital letters
 - Input files with key words
+- Using YOW in python 2.7 --> Giving input issues
+- Problem with UTF-8 coding
 
 ## Authors
 
