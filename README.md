@@ -23,7 +23,7 @@ Then you just have to launch the **python** script by typing
 
 Program will guide you across the configuration, is very easy.
 
-## Coming soon...
+## Versions
 
 **YOW v1.0**
 
@@ -31,8 +31,15 @@ We will be providing some new features for YOW tool.
 
 Leave your ideas so that we can improve it. They are all welcome!
 
+**YOW v1.0.1**
+
 - Words made by a combination of three
+- Small changes
+
+## Coming soon
+
 - Capital letters
+- Input files with key words
 
 ## Authors
 
