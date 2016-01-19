@@ -31,6 +31,9 @@ We will be providing some new features for YOW tool.
 
 Leave your ideas so that we can improve it. They are all welcome!
 
+- Words made by a combination of three
+- Capital letters
+
 ## Authors
 
 - Juan Antonio Velasco Gómez ([@juanvelascogomez](https://github.com/juanvelascogomez))
