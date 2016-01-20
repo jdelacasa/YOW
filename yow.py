@@ -9,7 +9,6 @@
 # -*- coding: utf-8 -*-
 import sys
 
-
 #Compatibility Python2 and Python3 for input
 try:
     input = raw_input
