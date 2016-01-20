@@ -21,6 +21,10 @@ Then you just have to launch the **python** script by typing
 
     python yow.py
 
+Another posibilty YOW gives you is to give him an **input file** directly. To do that, just type
+
+    python yow.py filename
+
 Program will guide you across the configuration, is very easy.
 
 ## Versions
@@ -36,12 +40,25 @@ Leave your ideas so that we can improve it. They are all welcome!
 - Words made by a combination of three
 - Small changes
 
-## Coming soon
+**YOW v1.1**
 
 - Capital letters
+
+      - All words in lower case
+      - All words in upper case
+      - All words with first letter capitalize
+
 - Input files with key words
-- Using YOW in python 2.7 --> Giving input issues
+
+      - Giving the possibility to give YOW an input file
+
+- Compatibility Python2 and Python3 for input
 - Problem with UTF-8 coding
+
+## Coming soon
+
+- All combinations for capitalize letters
+- More updates...
 
 ## Authors
 
