@@ -24,26 +24,26 @@ except NameError:
 
 banner =  """ _   _  _____      __
 | | | |/ _ \ \ /\ / /
-| |_| | (_) \ V  V / 
- \__, |\___/ \_/\_/  
- |___/ %sAuthors:%s @juanvelascogomez & @asolisi              
+| |_| | (_) \ V  V /
+ \__, |\___/ \_/\_/
+ |___/ %sAuthors:%s @juanvelascogomez & @asolisi
  Your Own Wordlist!\n"""
 
 menu = ['--version', '--update', '--help']
 v = "v1.2"
 
 def main():
-    # Check if argv [1] is in the menu  
+    # Check if argv [1] is in the menu
     if sys.argv[1] in menu:
         for i in menu:
             if sys.argv[1] == i:
                 command = str(i).replace("--", "")
                 # Execute function
                 globals()[command]()
-    
+
     # Banner
     print banner %(yellow, reset)
-    
+
     # argv[1] is the name of the new dictionary
     if len(sys.argv) == 2:
         if os.path.isfile(sys.argv[1]):
@@ -60,29 +60,29 @@ def main():
         if os.path.isfile(file_name):
             doc=open("new_" + file_name, "w")
         doc=open(file_name, "w")
-    
+
     #---------------------------------------------------
     #Creating two list for the wordlist
     #---------------------------------------------------
     word_list=[]
     word_list_aux=[]
-    
+
     word_list_new=[]
     word_list_second=[]
-    
+
     #---------------------------------------------------
     #Read
     #---------------------------------------------------
-    
+
     #Introduce words in the word_list
     try:
-        # Enter the keywords as follows: hello; Friend; Dog; Cat
+        print(" Enter the keywords as follows: hello; Friend; Dog; Cat")
         word = input("[%s*%s] keywords: " %(yellow,reset))
     except KeyboardInterrupt:
         print "\nGood Bye!"
         sys.exit()
 
-    # To convert vb to a list    
+    # To convert vb to a list
     word_list = word.split("; ")
 
     #---------------------------------------------------
@@ -91,21 +91,21 @@ def main():
     #   - All words in upper case
     #   - All words with first letter capitalize
     #---------------------------------------------------
-    
+
     #Set all initial words in lower
     for i in word_list:
         word_list_aux.append(i.lower())
-    
+
     #Reset initial wordlist
     word_list[:] = []
-    
+
     #Fill initial wordlist with all new words
     for i in word_list_aux:
         word_list.append(i)
         word_list.append(i.upper())
         word_list.append(i.capitalize())
-    
-    
+
+
     #---------------------------------------------------
     #Loop for combination of two words
     #---------------------------------------------------
@@ -113,7 +113,7 @@ def main():
         for j in word_list:
             if(i!=j):
                 word_list_new.append(i+j)
-    
+
     #---------------------------------------------------
     #Loop for combination of three words
     #---------------------------------------------------
@@ -121,7 +121,7 @@ def main():
         for j in word_list_new:
             if(i!=j):
                 word_list_second.append(i+j)
-    
+
     #---------------------------------------------------
     #Writting the new wordlist in the output file
     #---------------------------------------------------
