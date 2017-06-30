@@ -27,13 +27,13 @@ $ python yow.py <file_name>
 ```
 
 - Now you must give the keywords:
-```bash
+```
 # Write the keywords as follows:
 [*] keywords: hello; fried; dog; cat
 ```
 
 ## Versions
-```bash
+```
 v1.0:
 - We will be providing some new features for YOW tool.
 - Leave your ideas so that we can improve it. They are all welcome!
