@@ -16,7 +16,7 @@ git clone https://github.com/juanvelascogomez/YOW.git
 ```
 or
 
-*This repository:*
+*This [repository](https://github.com/qwartz2/YOW):*
 ```bash
 https://github.com/qwartz2/YOW.git
 ```
