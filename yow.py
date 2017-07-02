@@ -33,13 +33,14 @@ menu = ['--version', '--update', '--help']
 v = "v1.2"
 
 def main():
-    # Check if argv [1] is in the menu
-    if sys.argv[1] in menu:
-        for i in menu:
-            if sys.argv[1] == i:
-                command = str(i).replace("--", "")
-                # Execute function
-                globals()[command]()
+    if len(sys.argv) == 2:
+         # Check if argv [1] is in the menu
+         if sys.argv[1] in menu:
+             for i in menu:
+                 if sys.argv[1] == i:
+                     command = str(i).replace("--", "")
+                     # Execute function
+                     globals()[command]()
 
     # Banner
     print banner %(yellow, reset)
